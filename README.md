@@ -1,4 +1,6 @@
 edlab-test
 ==========
 
-Web app consisting my mockups on Edlab's projects
+This is a web page consisting my sample mockups on Edlab's projects.
+
+
