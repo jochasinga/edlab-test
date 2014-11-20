@@ -146,16 +146,16 @@ p {
 */
 
 .intro {
-    padding-top: 300px;
+    padding-top: 0px;
     /*padding-bottom: 150px;*/
     width: 100%;
     height: auto;
 }
 
 .intro .bg {
-    display: block;
-    overflow: hidden;
-    height: 100%;
+    /*display: block;*/
+    /*overflow: hidden;*/
+    height: 600px;
     width: auto;
     /*padding-top: 300px;*/
     /*padding-bottom: 150px;*/
@@ -191,9 +191,10 @@ p {
 }
 
 #content-1 {
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 500px;
+    top: auto;
+    width: 100%;
 }
 
 /* Parallax */
