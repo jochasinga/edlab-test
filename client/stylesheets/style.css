@@ -146,21 +146,28 @@ p {
 */
 
 .intro {
-    position: relative;
-    display: block;
-    width: 100%;
     padding-top: 300px;
-    padding-bottom: 150px;
+    /*padding-bottom: 150px;*/
+    width: 100%;
+    height: auto;
+}
+
+.intro .bg {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: auto;
+    /*padding-top: 300px;*/
+    /*padding-bottom: 150px;*/
     color: #ffffff;
-    background: url(facebook_monkey.jpg) no-repeat top left scroll;
+    background: url(facebook_monkey.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
 
 }
-
-
 
 .intro .intro-body {
     display: block;
@@ -181,6 +188,12 @@ p {
 .intro .intro-footer {
   display: inline;
   vertical-align: middle;
+}
+
+#content-1 {
+    position: fixed;
+    left: 0;
+    top: 500px;
 }
 
 /* Parallax */
