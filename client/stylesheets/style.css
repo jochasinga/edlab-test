@@ -7,11 +7,11 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  font-family: Open-sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  background: #eee;
-  color: #666666;
+    width: 100%;
+    height: 100%;
+    font-family: Open-sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #eee;
+    color: #666666;
 }
 
 html {
@@ -43,13 +43,20 @@ li.social a {
     float: left;
     color: #aaaaaa;
     overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 44px;
     height: 47px;
+    text-align: center;
 }
 
 .container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.content {
+    background: #ffffff;
 }
 
 h1,
@@ -58,21 +65,32 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 35px;
-  /*text-transform: uppercase;*/
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
+    margin: 0 0 35px;
+    /*text-transform: uppercase;*/
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 h1, h2 {
-  /*text-transform: uppercase;*/
+    /*text-transform: uppercase;*/
 }
 
 p {
-  margin: 0 0 25px;
-  font-size: 18px;
-  line-height: 1.5;
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.columns {
+    height: 350px;
+    background: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.columns .section-title {
+    color: rgba(0, 0, 0, .8);
 }
 
 .navbar {
@@ -81,7 +99,7 @@ p {
 }
 
 .navbar-fixed-top {
-    border-bottom-width: 5px;
+    border-bottom-width: 0px;
     border-color: white;
 }
 
@@ -91,46 +109,65 @@ p {
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
-  padding: 4px 6px;
-  font-size: 16px;
-  color: #fffff;
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fffff;
 }
 
 .navbar-brand {
-  color: black;
-  font-family: "Pacifico", "Helvetica Neue";
-  font-weight: 700;
-  font-size: 21px;
+    font-family: "Pacifico", "Helvetica Neue";
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .brand-heading {
-  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.45);
-  font-size: 45px;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.45);
+    font-size: 45px;
 }
 
 /* My own */
+/*
 .intro {
-  display: table;
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  /*padding: 100px 0;*/
-  padding-top: 300px;
-  padding-bottom: 150px;
-  text-align: center;
-  color: #ffffff;
-  background: url(facebook_monkey.jpg) no-repeat bottom center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 300px;
+    padding-bottom: 150px;
+    text-align: center;
+    color: #ffffff;
+    background: url(facebook_monkey.jpg) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+*/
+
+.intro {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 300px;
+    padding-bottom: 150px;
+    color: #ffffff;
+    background: url(facebook_monkey.jpg) no-repeat top left scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
+
+
 .intro .intro-body {
-  display: table;
-  vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .intro .intro-body .brand-heading {
@@ -145,6 +182,9 @@ p {
   display: inline;
   vertical-align: middle;
 }
+
+/* Parallax */
+
 
 /* For ordinary PC screen */
 @media(min-width:767px) {

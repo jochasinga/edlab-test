@@ -6,7 +6,8 @@
   <title>Panisuan Chasinga's Home</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid top-container" data-0="top:200px; opacity:1"
+         data-450="top:370px; opacity:0; ">
 
       <!-- NAV -->
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -32,13 +33,18 @@
 
       <!-- HEADER -->
 
-      <header class="intro">
-          <div class="intro-body">
+      <header class="intro parallax-image-wrapper"
+              data-0="filter: blur(0px);" data-500="filter: blur(50px)">
+          <div class="intro-body" data-0="opacity: 1;" data-10="opacity: 0;">
               <div class="container">
                   <div class="row">
                       <div class="col-md-8 col-md-offset-2">
-                          <h1 class="brand-heading">Welcome to <span class="pacific">EdMocks</span></h1>
-                          <p class="intro-text">Please login to comment :)</p>
+                          <h1 class="brand-heading">
+                              Welcome to&nbsp;<span class="pacific">EdMocks</span>
+                          </h1>
+                          <p class="intro-text">
+                             Please login to comment :)
+                          </p>
                       </div>
                   </div>
               </div>
@@ -46,6 +52,16 @@
       </header>
 
       <!-- HEADER -->
+
+      <!-- COLUMNS -->
+      <section class="container-fluid">
+        <div class="columns col-md-12">
+          <div class="col-md-12">
+            <h1 class="section-title">Here are the mockups</h1>
+          </div>
+        </div>
+      </section>
+      <!-- COLUMNS -->
 
       <!-- CONTENT -->
       <div class="container">
@@ -58,4 +74,13 @@
       <!-- CONTENT -->
 
     </div>
+    <script src="skrollr.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init({
+                options: {
+                    smoothScrolling: true,
+                    forceHeight: false
+                }
+        });
+    </script>
 </body>
