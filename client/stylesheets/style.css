@@ -1,19 +1,132 @@
 .grid-block, .main, .post, .comments li, .comment-form {
     background: #fff;
-    border-radius: 3px;
+    border-radius: 0px;
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
+
 body {
-    background: #eee;
-    color: #666666;
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #eee;
+  color: #666666;
 }
-.navbar { margin-bottom: 10px }
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  /*text-transform: uppercase;*/
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h1, h2 {
+  /*text-transform: uppercase;*/
+}
+
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.navbar {
+  margin-bottom: 10px;
+  background-color: rgba(255,255,255,.6)
+}
+
 .navbar .navbar-inner {
-    border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 3px 3px;
 }
-#spinner { height: 300px }
+
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: #fffff;
+}
+
+.navbar-brand {
+  color: black;
+  font-family: "Pacifico", "Helvetica Neue";
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.brand-heading {
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.45);
+  font-size: 45px;
+}
+
+/* My own */
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  /*padding: 100px 0;*/
+  padding-top: 300px;
+  padding-bottom: 150px;
+  text-align: center;
+  color: #ffffff;
+  background: url(facebook_monkey.jpg) no-repeat bottom center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.intro .intro-body {
+  display: table;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro .intro-body .brand-heading {
+  font-size: 60px;
+}
+
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+
+.intro .intro-footer {
+  display: inline;
+  vertical-align: middle;
+}
+
+/* For ordinary PC screen */
+@media(min-width:767px) {
+
+}
+
+.pacific {
+  font-family: "Pacifico", "Helvetica Neue";
+}
+
+
+
+#spinner {
+  height: 300px;
+}
+
 .post {
     *zoom: 1;
     -webkit-transition: all 300ms 0ms;

@@ -1,18 +1,42 @@
 <head>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,
+              700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   <title>Panisuan Chasinga's Home</title>
 </head>
 <body>
-    <!-- Navigation -->
-    <div class="container">
+    <div class="container-fluid">
 
-      <header class="navbar navbar-default" role="navigation">
+      <!-- NAV -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 	    <div class="navbar-header">
           <a class="navbar-brand page-scroll" href="/">EdMocks</a>
 	    </div>
+      </div>
+      <!-- NAV -->
+
+      <!-- HEADER -->
+
+      <header class="intro">
+          <div class="intro-body">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-8 col-md-offset-2">
+                          <h1 class="brand-heading">Welcome to <span class="pacific">EdMocks</span></h1>
+                          <p class="intro-text">Please login to comment :)</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </header>
 
+      <!-- HEADER -->
+
+      <!-- CONTENT -->
       <div id="main" class="row-fluid">
-	{{> postsList}}
+	    {{> postsList}}
       </div>
+      <!-- CONTENT -->
+
     </div>
 </body>
