@@ -31,74 +31,110 @@
       <!-- NAV -->
 
       <!-- HEADER -->
-
       <header class="intro" id="intro-1"
               data-0="filter: blur(0px);"
               data-500="filter: blur(50px)">
-          <div class="bg"
-
-               data-center="background-position: 50% 0px;"
-               data-top-bottom="background-position: 50% -200px;">
-            <div class="intro-body">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-8 col-md-offset-2">
-                          <h1 class="brand-heading"
-                              data-0="opacity: 1;" data-10="opacity: 0;">
-                              Welcome to&nbsp;<span class="pacific">Mocklab</span>
-                          </h1>
-                          <p class="intro-text"
-                             data-0="opacity: 1;" data-70="opacity: 0">
-                             Edlab Geeks, please comment :)
-                          </p>
-                      </div>
-                  </div>
+        <div class="bg" id="bg-1"
+             data-center="background-position: 50% 0px;"
+             data-top-bottom="background-position: 50% -200px;">
+          <div class="intro-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <h1 class="brand-heading"
+                      data-0="opacity: 1;" data-10="opacity: 0;">
+                        Welcome to&nbsp;<span class="pacific">Mocklab</span>
+                  </h1>
+                  <p class="intro-text"
+                     data-0="opacity: 1;" data-70="opacity: 0">
+                       Edlab Geeks, please comment :)
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
       </header>
       <!-- HEADER -->
-
       <!-- COLUMNS -->
       <section class="container-fluid" id="content-1">
         <div class="columns col-md-12"
-             data-bottom-top="padding-top: 200px;"
+             data-bottom="padding-top: 150px;"
              data--100-bottom="padding-top: 40px;">
           <div class="col-md-12 text-center"
                data-anchor-target="#content-1"
-               data-100-bottom="opacity: 0"
-               data-bottom="opacity: 1">
-            <h1 class="section-title">Here are the mockups</h1>
+               data-bottom="opacity: 0;"
+               data--100-bottom="opacity: 1;">
+            <h1 class="section-title" id="section-title-1">Check out the mockups</h1>
           </div>
 
         <div class="col-md-10 col-md-offset-2 thumbnails-wrapper">
           <div class="col-md-6 col-md-3">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/100%x180" alt="...">
-            </a>
+            <div class="thumbnail" id="thumbnail-1"
+               data-anchor-target="#content-1 #section-title-1"
+               data-center-top="opacity: 0; transform: translate(0px, 100px);"
+               data--100-center-top="opacity: 1; transform: translate(0px, 0px);">
+              <a href="#"><img data-src="holder.js/100%x180" alt="..."></a>
+              <div class="caption text-center">
+                <a href="#"><span class="fa fa-lg fa-thumbs-up user-button"></span></a>&nbsp;&nbsp;
+                <a href="#"><span class="fa fa-lg fa-thumbs-down user-button"></span></a>&nbsp;&nbsp;
+                <a href="#"><span class="fa fa-lg fa-comment user-button"></span></a>
+              </div>
+            </div>
           </div>
           <div class="col-md-6 col-md-3">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/100%x180" alt="...">
-            </a>
+            <div class="thumbnail" id="thumbnail-2"
+               data-anchor-target=".thumbnails-wrapper #thumbnail-1"
+               data-center-top="opacity: 0; transform: translate(0px, 100px);"
+               data--50-center-top="opacity: 1; transform: translate(0px, 0px);">
+              <a href="#"><img data-src="holder.js/100%x180" alt="..."></a>
+                <div class="caption text-center">
+                  <a href="#"><span class="fa fa-lg fa-thumbs-up user-button"></span></a>&nbsp;&nbsp;
+                  <a href="#"><span class="fa fa-lg fa-thumbs-down user-button"></span></a>&nbsp;&nbsp;
+                  <a href="#"><span class="fa fa-lg fa-comment user-button"></span></a>
+                </div>
+            </div>
           </div>
           <div class="col-md-6 col-md-3">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/100%x180" alt="...">
-            </a>
+            <div class="thumbnail" id="thumbnail-3"
+               data-anchor-target=".thumbnails-wrapper #thumbnail-2"
+               data-center-top="opacity: 0; transform: translate(0px, 100px);"
+               data--100-center-top="opacity: 1; transform: translate(0px, 0px);">
+              <a href="#"><img data-src="holder.js/100%x180" alt="..."></a>
+                <div class="caption text-center">
+                  <a href="#"><span class="fa fa-lg fa-thumbs-up user-button"></span></a>&nbsp;&nbsp;
+                  <a href="#"><span class="fa fa-lg fa-thumbs-down user-button"></span></a>&nbsp;&nbsp;
+                  <a href="#"><span class="fa fa-lg fa-comment user-button"></span></a>
+                </div>
+            </div>
           </div>
         </div>
         </div>
       </section>
       <!-- COLUMNS -->
 
+      <section class="container-fluid" id="intro-2"
+               data-100-top="filter: blur(50px);"
+               data--100-top="filter: blur(0px);">
+        <div class="bg"
+             data-center="background-position: 50% 0px;"
+             data-top-bottom="background-position: 50% -300px;">
+        </div>
+        <div class="col-md-12" style="height: 600px;"
+             data-anchor-target="#content-1"
+             data-100-top-bottom="opacity: 0;"
+             data-top-bottom="opacity: 1;">
+          <h1>Leave some posts!</h1>
+        </div>
+      </section>
+
       <!-- CONTENT -->
       <section class="container-fluid" id="content-2">
-        <section class="content col-md-12" style="padding-top: 10px">
-            <div id="main" class="row-fluid">
-	            {{> postsList}}
-            </div>
-        </section>
+        <div class="content col-md-12" style="padding-top: 10px">
+          <div id="main" class="row-fluid">
+            {{> postsList}}
+          </div>
+        </div>
       </section>
       <!-- CONTENT -->
 
