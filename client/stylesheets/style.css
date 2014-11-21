@@ -15,12 +15,52 @@ body {
 }
 
 html {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    text-justify: inter-word;
 }
 
 .navbar > ul {
     background-color: transparent;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    background-color: rgba(255,255,255,.6);
+    -webkit-background-color: rgba(255,255,255,.6);
+    -moz-background-color: rgba(255,255,255,.6);
+    -o-background-color: rgba(255,255,255,.6);
+
+}
+
+.navbar-fixed-top {
+    border-bottom-width: 0px;
+    border-color: white;
+}
+
+.navbar .navbar-inner {
+    border-radius: 0px 0px 3px 3px;
+
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fffff;
+}
+
+.navbar-brand {
+    font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.brand-heading .intro-text {
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.45);
+    font-size: 45px;
 }
 
 li.login {
@@ -99,37 +139,7 @@ p {
     color: rgba(0, 0, 0, .7);
 }
 
-.navbar {
-    margin-bottom: 0px;
-    background-color: rgba(255,255,255,.6);
-}
 
-.navbar-fixed-top {
-    border-bottom-width: 0px;
-    border-color: white;
-}
-
-.navbar .navbar-inner {
-    border-radius: 0px 0px 3px 3px;
-
-}
-
-.navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
-    font-size: 16px;
-    color: #fffff;
-}
-
-.navbar-brand {
-    font-family: "Pacifico", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-}
-
-.brand-heading .intro-text {
-    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.45);
-    font-size: 45px;
-}
 
 /* My own */
 .intro {
@@ -145,14 +155,13 @@ p {
 
 #intro-2 .bg {
     overflow: hidden;
-    height: 800px;
+    height: 1200px;
     color: #ffffff;
-    background: url(winter_hares.jpg) no-repeat fixed center center;
+    background: url(kings_into_the_dark.jpg) no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 .intro #bg-1 {
@@ -167,25 +176,18 @@ p {
     background-attachment: fixed;
 }
 
-/*
-.intro #bg-2 {
-    overflow: hidden;
-    height: 800px;
-    color: #ffffff;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background: url(king_into_the_dark.jpg) no-repeat top center;
-}
-*/
-
 .intro .intro-body {
+    /*
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%;
+}
+
+#intro-2 .intro-body {
+    color: rgba(0,0,0,.8);
+    top: 70%;
 }
 
 .intro-body h1, .intro-body p {
@@ -217,9 +219,6 @@ p {
     top: 1200px;
     width: 100%;
 }
-
-/* Parallax */
-
 
 /* For ordinary PC screen */
 @media(min-width:767px) {
