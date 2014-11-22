@@ -1,3 +1,4 @@
+
 .grid-block, .main, .post, .comments li, .comment-form {
     background: #fff;
     border-radius: 0px;
@@ -5,6 +6,7 @@
     margin-bottom: 10px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
+
 
 body {
     width: 100%;
@@ -23,20 +25,28 @@ p {
     text-justify: inter-word;
 }
 
-.navbar > ul {
+.navbar ul {
     background-color: transparent;
 }
 
 .navbar {
     margin-bottom: 0px;
-    background-color: rgba(255,255,255,.6);
+    /*
     -webkit-background-color: rgba(255,255,255,.6);
     -moz-background-color: rgba(255,255,255,.6);
     -o-background-color: rgba(255,255,255,.6);
+    background-color: rgba(255,255,255,.6);
+    */
+    background: white;
 
 }
 
 .navbar-fixed-top {
+    border-bottom-width: 0px;
+    border-color: white;
+}
+
+.navbar-scroll {
     border-bottom-width: 0px;
     border-color: white;
 }
@@ -66,6 +76,8 @@ p {
 li.login {
     display: block;
     float: left;
+    margin-top: 12px;
+    padding-right: 10px;
 }
 
 li {
@@ -112,20 +124,24 @@ h6 {
     letter-spacing: 1px;
 }
 
-h1, h2 {
-    /*text-transform: uppercase;*/
-}
-
 p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
 }
 
+.title-wrapper {
+    padding-top: 60px;
+}
+
+.title-wrapper .section-title {
+    line-height: 0.6px;
+}
+
 .columns {
-    height: 375px;
+    height: 425px;
     background: #ffffff;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     padding-bottom: 50px;
     z-index: 10;
 }
@@ -138,8 +154,6 @@ p {
 .columns .section-title {
     color: rgba(0, 0, 0, .7);
 }
-
-
 
 /* My own */
 .intro {
@@ -176,13 +190,25 @@ p {
     background-attachment: fixed;
 }
 
+.intro #bg-3 {
+    overflow: hidden;
+    height: 800px;
+    color: #ffffff;
+    background: url(buffaloes.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .intro .intro-body {
     /*
     margin-left: auto;
     margin-right: auto;*/
     text-align: center;
     position: relative;
-    top: 50%;
+    top: 40%;
 }
 
 #intro-2 .intro-body {
@@ -218,11 +244,6 @@ p {
     left: 0;
     top: 1200px;
     width: 100%;
-}
-
-/* For ordinary PC screen */
-@media(min-width:767px) {
-
 }
 
 .pacific {
