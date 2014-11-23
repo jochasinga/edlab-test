@@ -31,29 +31,12 @@ p {
 
 .navbar {
     margin-bottom: 0px;
-    /*
-    -webkit-background-color: rgba(255,255,255,.6);
-    -moz-background-color: rgba(255,255,255,.6);
-    -o-background-color: rgba(255,255,255,.6);
-    background-color: rgba(255,255,255,.6);
-    */
-    background: white;
-
-}
-
-.navbar-fixed-top {
+    background: rgba(255, 255, 255, 0.6);
+    -webkit-background: rgba(255,255,255, 0.6);
+    -moz-background: rgba(255,255,255, 0.6);
+    -o-background: rgba(255,255,255, 0.6);
     border-bottom-width: 0px;
     border-color: white;
-}
-
-.navbar-scroll {
-    border-bottom-width: 0px;
-    border-color: white;
-}
-
-.navbar .navbar-inner {
-    border-radius: 0px 0px 3px 3px;
-
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
@@ -180,6 +163,7 @@ p {
 
 .intro #bg-1 {
     overflow: hidden;
+    top: 0px;
     height: 800px;
     color: #ffffff;
     background: url(arctic_ship.jpg) no-repeat fixed center center;
@@ -187,7 +171,6 @@ p {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .bg .heading-wrapper {
@@ -209,12 +192,11 @@ p {
     height: 800px;
     width: auto;
     color: #ffffff;
-    background: url(polar_bear.jpg) no-repeat center center;
+    background: url(polar_bear_cave.jpg) no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .intro .intro-body {
@@ -236,16 +218,16 @@ p {
 }
 
 .intro .intro-body .brand-heading {
-  font-size: 60px;
+    font-size: 60px;
 }
 
 .intro .intro-body .intro-text {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 .intro .intro-footer {
-  display: inline;
-  vertical-align: middle;
+    display: inline;
+    vertical-align: middle;
 }
 
 #content-1 {

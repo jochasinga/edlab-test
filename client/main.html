@@ -10,7 +10,7 @@
     <div class="container-fluid top-container">
 
       <!-- NAV -->
-      <div class="navbar navbar-default navbar-scroll" role="navigation">
+      <div class="navbar navbar-default navbar-static-top" role="navigation">
         <a class="navbar-brand" href="/">Mocklab</a>
         <ul class="nav navbar pull-right">
           <li class="login">
@@ -33,7 +33,7 @@
 
       <!-- INTRO 1 -->
       <header class="intro" id="intro-1">
-        <div class="bg" id="bg-1"
+        <div class="bg" id="bg-1" style="top: 0px;"
              data-top-top="background-position: 50% 0px;"
              data-top-bottom="background-position: 50% -300px;">
           <div class="intro-body">
@@ -136,7 +136,7 @@
             <div class="col-md-12">
               <div class="col-md-8 col-md-offset-2 intro-body">
                 <h1 class="brand-heading">
-                  Let's teamed up.
+                  Let's team up.
                 </h1>
               </div>
             </div>
@@ -163,7 +163,8 @@
                 I'm also interested in electronics and active in developing in Arduino, Spark,
                 Raspberry Pi to connect the physical world to the internet and make sense of them.
               </p>
-              <p>I write about programming, art, politics and culture on <a href="http://medium.com/@jochasinga">Medium</a></p>
+              <p>I write about programming, art, politics and culture on
+                <a href="http://medium.com/@jochasinga">Medium</a>.</p>
             </div>
           </div>
         </div>
@@ -182,8 +183,15 @@
                   Hire me.
                 </h1>
                 <p class="intro-text">
-                  and save a <a href="#">polar bear</a>.
+                  and
+                  <a href="http://freakonomics.com/2010/08/24/unemployment-vs-global-warming/">
+                    save polar bears</a>.
                 </p>
+              </div>
+            </div>
+            <div class="col-md-12 title-wrapper" style="position:absolute; top: 320px;">
+              <div class="col-md-8 col-md-offset-2 text-center">
+                <p>I do not own the images. All images are copyrighted by the authors.</p>
               </div>
             </div>
           </div>
@@ -191,12 +199,17 @@
       </header>
       <!-- INTRO 3 -->
 
-      <footer class="container" style="background-color: rgba(255, 255, 255, 1);">
-          <div class="row text-center" style="position:relative; height:100px;
-               top: 80%; color: white;">
-            <p>I do not own the images. All images are copyrighted by the authors.</p>
+      <!-- SECTION 3 -->
+      <!--
+      <footer class="container-fluid" id="content-3">
+          <div class="col-md-12 columns">
+            <div class="col-md-8 col-md-offset-2 title-wrapper">
+              <p>I do not own the images. All images are copyrighted by the authors.</p>
+            </div>
           </div>
       </footer>
+      -->
+      <!-- SECTION 3 -->
     </div>
 
     <div class="modal fade">
@@ -221,6 +234,8 @@
 
     <script src="skrollr.min.js"></script>
     <script type="text/javascript">
-        var s = skrollr.init();
+        var s = skrollr.init({
+            forceHeight: false
+        });
     </script>
 </body>
