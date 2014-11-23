@@ -182,7 +182,7 @@ p {
     overflow: hidden;
     height: 800px;
     color: #ffffff;
-    background: url(facebook_monkey.jpg) no-repeat center center;
+    background: url(arctic_ship.jpg) no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -190,11 +190,26 @@ p {
     background-attachment: fixed;
 }
 
+.bg .heading-wrapper {
+    position: relative;
+    top: 40%;
+}
+
+#bg-2 .heading-wrapper {
+    top: 65%;
+}
+
+
+.bg .heading-wrapper h1 {
+    color: white;
+}
+
 .intro #bg-3 {
     overflow: hidden;
     height: 800px;
+    width: auto;
     color: #ffffff;
-    background: url(buffaloes.jpg) no-repeat center center;
+    background: url(polar_bear.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
