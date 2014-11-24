@@ -1,5 +1,26 @@
 Template.mocksList.helpers({
-    mocks: function() {
-	    return Mocks.find();
+    mocks: function () {
+        return Mocks.find();
     }
 });
+
+Template.mockItem.helpers = function() {
+    if (count === 1) {
+        $('#thumbnail').attr({
+            'data--0-center-top': 'opacity: 0; transform: translate(0px, 50px);',
+            'data--100-center-top': 'opacity: 0; transform: translate(0px, 50px);'
+        });
+    }
+    else if (count === 2) {
+        $('#thumbnail').attr({
+            'data--50-center-top': "opacity: 0; transform: translate(0px, 50px);",
+            'data--150-center-top': "opacity: 0; transform: translate(0px, 50px);"
+        });
+    }
+    else if (count === 3) {
+        $('#thumbnail').attr({
+            'data--100-center-top': "opacity: 0; transform: translate(0px, 50px);",
+            'data--200-center-top': "opacity: 0; transform: translate(0px, 50px);"
+        });
+    }
+};
