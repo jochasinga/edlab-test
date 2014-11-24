@@ -4,7 +4,7 @@ Template.mocksList.helpers({
     }
 });
 
-Template.mockItem.helpers({
+Template.mockItem.events({
     attributes: function() {
         if (count === 1) {
             return {
