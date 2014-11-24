@@ -31,6 +31,24 @@
       </div>
       <!-- NAV -->
 
+      <!-- NAV-FREE -->
+      <div class="navbar navbar-default" id="navbar-free" role="navigation">
+        <ul class="nav navbar pull-left">
+          <li class="social">
+            <a href="#" class="side-icon">
+              <i class="fa fa-anchor fa-2x"></i>
+            </a>
+            <a href="#intro-2" class="side-icon">
+              <i class="fa fa-beer fa-2x"></i>
+            </a>
+            <a href="#intro-3" class="side-icon">
+              <i class="fa fa-tree fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- NAV-FREE -->
+
       <!-- INTRO 1 -->
       <header class="intro" id="intro-1">
         <div class="bg" id="bg-1" style="top: 0px;"
@@ -43,12 +61,6 @@
                   <h1 class="brand-heading">
                     Welcome EdLab geeks.
                   </h1>
-                  <!--
-                  <p class="intro-text"
-                     data-0="opacity: 1;" data-70="opacity: 0">
-                       This is for Edlab dev geeks
-                  </p>
-                  -->
                 </div>
               </div>
             </div>
@@ -64,7 +76,8 @@
           <div class="col-md-8 col-md-offset-2">
             <div class="col-md-12 text-center title-wrapper">
               <h1 class="section-title" id="section-title-1">Check out the mockups</h1>
-              <p>or <a href="#">login</a> with your <a href="#">EdLab Code</a> to comment</p>
+              <p>or <a href="#">login</a> with your <a href="" data-toggle="modal"
+                       data-target="#myModal">EdLab Code</a> to comment</p>
             </div>
           </div>
           <!-- SECTION TITLE -->
@@ -198,21 +211,9 @@
         </div>
       </header>
       <!-- INTRO 3 -->
-
-      <!-- SECTION 3 -->
-      <!--
-      <footer class="container-fluid" id="content-3">
-          <div class="col-md-12 columns">
-            <div class="col-md-8 col-md-offset-2 title-wrapper">
-              <p>I do not own the images. All images are copyrighted by the authors.</p>
-            </div>
-          </div>
-      </footer>
-      -->
-      <!-- SECTION 3 -->
     </div>
 
-    <div class="modal fade">
+    <div class="modal fade" id="myModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -237,5 +238,16 @@
         var s = skrollr.init({
             forceHeight: false
         });
+
+        var $freenav = $('#navbar-free');
+        $freenav.draggable({ opacity:0.35 });
+
+        /*
+        $freenav.animate({
+            "left": $freenav.data('left'),
+            "top": $freenav.data('top')
+        });
+        */
+
     </script>
 </body>
